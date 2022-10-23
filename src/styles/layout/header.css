@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 100px 0px 100px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #FF6060;
+}
+header nav a:hover {
+  border-bottom: solid 1px;
+}
+
+@media screen and (max-width: 1380px) {
+  header nav {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  header {
+    margin: 40px 15px 0px 15px;
+  }
+  header img {
+    width: 30%;
+    height: 30%;
+  }
+  header nav {
+    width: 45%;
+  }
+  header nav a {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=header.css.map */

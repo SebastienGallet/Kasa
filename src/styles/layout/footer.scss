@@ -1,0 +1,18 @@
+footer{
+    background-color: black;
+    margin: 0;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .whitelogo{
+        width: 122px;
+        margin-top: 40px;
+    }
+    #mention{
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+}

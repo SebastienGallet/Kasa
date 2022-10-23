@@ -1,0 +1,26 @@
+#banniere{
+    height: 223px;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    margin-bottom: 40px;
+    .background{
+        grid-area: 1/1/1/1;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        filter: brightness(70%);
+        object-fit: cover;
+    }
+    h2{
+        grid-area: 1/1/1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 48px;
+        font-weight: normal;
+        color: white;
+        z-index: 1;
+        text-align: start;
+    }
+}

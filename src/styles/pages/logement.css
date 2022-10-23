@@ -1,0 +1,109 @@
+#oneLodge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px 100px;
+}
+#oneLodge #infoLodge {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+#oneLodge #infoLodge #nameLodge {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 88%;
+}
+#oneLodge #infoLodge #nameLodge h2 {
+  font-size: 36px;
+  color: #FF6060;
+  margin: 0;
+}
+#oneLodge #infoLodge #nameLodge p {
+  font-size: 18px;
+  color: #FF6060;
+}
+#oneLodge #infoLodge #nameLodge #tags {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-bottom: 0;
+}
+#oneLodge #infoLodge #nameLodge #tags li {
+  background-color: #FF6060;
+  border-radius: 10px;
+  color: white;
+  min-width: 115px;
+  min-height: 25px;
+  list-style-type: none;
+  margin-right: 10px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#oneLodge #infoLodge #propRating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#oneLodge #infoLodge #propRating #proprio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#oneLodge #infoLodge #propRating #proprio p {
+  font-size: 18px;
+  color: #FF6060;
+  display: flex;
+  text-align: end;
+  margin: auto 10px;
+  word-wrap: normal;
+}
+#oneLodge #infoLodge #propRating #proprio img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+#oneLodge #infoLodge #propRating #stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+#oneLodge #infoLodge #propRating #stars .star {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 1050px) {
+  #oneLodge {
+    margin: 40px 15px;
+  }
+  #oneLodge #infoLodge {
+    flex-direction: column;
+  }
+  #oneLodge #infoLodge #propRating {
+    flex-direction: row-reverse;
+    margin-top: 40px 0px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #oneLodge #infoLodge #nameLodge #tags {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  #oneLodge #infoLodge #nameLodge #tags li {
+    margin: 10px 0;
+  }
+  #oneLodge #details {
+    flex-direction: column;
+  }
+  #oneLodge #details .collapse {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=logement.css.map */

@@ -1,0 +1,54 @@
+@import '../utils/variables.scss';
+
+#error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #errorcode{
+        font-size: 288px;
+        font-weight:900;
+        color: $colorprimary;
+        margin: 40px 0;
+    }
+    #oups{
+        font-size: 36px;
+        color: $colorprimary;
+        margin: 0;
+        text-align: center;
+    }
+    #backhome{
+        font-size: 18px;
+        color: $colorprimary;
+        margin: 200px 0 40px 0;
+    }
+    
+}
+// footer{
+//         display: none;
+// }
+
+@media screen and (max-width : 900px) {
+    #error{
+        margin: 40px 15px 0px 15px;
+        #errorcode{
+            font-size: 200px;
+        }
+        #oups{
+            font-size: 29px;
+        }
+    }
+}
+
+@media screen and (max-width : 900px) {
+    #error{
+        #errorcode{
+            font-size: 96px;
+        }
+        #oups{
+            font-size: 18px;
+        }
+        #backhome{
+            font-size: 14px;
+        }
+    }
+}

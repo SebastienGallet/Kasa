@@ -1,0 +1,47 @@
+@import '../utils/variables.scss';
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 100px 0px 100px;
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 20%;
+        a{
+            text-decoration: none;
+            font-size: 24px;
+            color: $colorprimary;
+            &:hover{
+                border-bottom: solid 1px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1380px){
+    header{
+        nav{
+            width: 25%;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    header{
+        margin: 40px 15px 0px 15px;
+        img{
+            width: 30%;
+            height: 30%;
+        }
+        nav{
+            width: 45%;
+            a{
+                font-size: 18px;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import '../utils/variables.scss';
+
+#details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapse {
+    margin: 40px 0;
+    width: 45%;
+    .titleCollapse{
+        z-index: 10;
+        background-color: $colorprimary;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        height: 40px;
+        padding: 0 20px;
+        &:hover{
+        cursor: pointer;}
+        .flecheClose{
+            transform: rotate(0deg);
+            transition: all 0.4s;
+        }
+        .flecheOpen{
+                transform: rotate(180deg);
+                transition: all 0.4s;
+            }
+        
+    
+    }
+    .contenuCollapse{
+        z-index: 0;
+        display:flex;
+        align-items: flex-start;
+        flex-direction: column;
+        background: #F7F7F7;
+        color: $colorprimary;
+        font-size: 18px;
+        padding: 20px;
+        min-height: 120px;
+        text-align: justify;
+        
+        li{
+            
+            list-style-type: none;
+        }
+    }
+}
