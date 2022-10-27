@@ -54,13 +54,17 @@
     background-color: white;
     margin-top: 35px;
   }
-  #homepage #listhouse .card {
-    height: 255px;
+  #homepage #listhouse a {
+    max-width: 100%;
   }
-  #homepage #listhouse .card .cardimage {
+  #homepage #listhouse a .card {
+    height: 255px;
+    margin: 30px auto;
+  }
+  #homepage #listhouse a .card .cardimage {
     margin: 10px 15px;
   }
-  #homepage #listhouse .card .cardtitle {
+  #homepage #listhouse a .card .cardtitle {
     font-size: 16px;
   }
 }
