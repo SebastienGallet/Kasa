@@ -1,21 +1,20 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Carroussel from "../components/Carroussel/carroussel";
 import Collapse from "../components/Collapse/Collapse";
 import InfoLodge from "../components/Lodge Infos/infolodge";
-// import Slideshow from "../components/Slideshow/slideshow";
+import Slideshow from "../components/Slideshow/slideshow";
 import lodgingList from "../datas/logements.json";
+import Error from "../components/Error/error";
 
 
 function Logement() {
   let {id} = useParams();
   const lodging = lodgingList.find(log => log.id === id);
 
-
+  if (lodgingList.find(log => log.id === id)) {
     return (
       <div id="oneLodge">
-        <Carroussel/>
-        {/* <Slideshow/> */}
+        <Slideshow/>
         <InfoLodge/>
         <div id="details">
           <Collapse
@@ -31,6 +30,11 @@ function Logement() {
         </div>
       </div>
     )
+    
+  } else {
+    return (<Error/>)
+  }
+    
   }
   
   export default Logement
